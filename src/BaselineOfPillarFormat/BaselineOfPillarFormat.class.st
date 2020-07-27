@@ -34,7 +34,7 @@ BaselineOfPillarFormat >> baseline: spec [
 				package: 'Pillar-ExporterRichText' with: [ 
 					spec requires: #('PillarCore' "pillar pear?") ].
 		spec 
-			group: 'default' with: #('pillar');
+			group: 'default' with: #('pillar' 'microdown');
 			"# pillar "
 			group: 'pillar' with: #('pillar-parser' 'pillar-parser-tests' 'pillar-exporter' 'pillar-exporter-tests');
 			group: 'pillar-parser' with: #('Pillar-PetitPillar');
