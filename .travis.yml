@@ -3,11 +3,6 @@ sudo: false
 os:
   - linux
   
-smalltalk:
-  - Pharo64-9.0
-  - Pharo64-8.0
-  - Pharo64-7.0
-
 matrix:
   include:
     - smalltalk: Pharo64-9.0
