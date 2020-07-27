@@ -1,0 +1,24 @@
+language: smalltalk
+sudo: false
+os:
+  - linux
+  
+smalltalk:
+  - Pharo64-9.0
+  - Pharo64-8.0
+  - Pharo64-7.0
+
+matrix:
+  include:
+    - smalltalk: Pharo64-9.0
+      smalltalk_config: .smalltalk.core.ston
+    - smalltalk: Pharo64-9.0
+      smalltalk_config: .smalltalk.foundation.ston
+    - smalltalk: Pharo64-8.0
+      smalltalk_config: .smalltalk.core.ston
+    - smalltalk: Pharo64-8.0
+      smalltalk_config: .smalltalk.foundation.ston
+    - smalltalk: Pharo64-7.0
+      smalltalk_config: .smalltalk.core.ston
+    - smalltalk: Pharo64-7.0
+      smalltalk_config: .smalltalk.foundation.ston
