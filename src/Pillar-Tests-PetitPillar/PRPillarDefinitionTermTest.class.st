@@ -1,26 +1,26 @@
 Class {
-	#name : #PRDefinitionTermTest,
-	#superclass : #PRListTest,
-	#category : 'Pillar-Tests-Model-Document'
+	#name : #PRPillarDefinitionTermTest,
+	#superclass : #PRPillarListTest,
+	#category : #'Pillar-Tests-PetitPillar'
 }
 
 { #category : #testing }
-PRDefinitionTermTest class >> isAbstract [
+PRPillarDefinitionTermTest class >> isAbstract [
 	^ false
 ]
 
 { #category : #private }
-PRDefinitionTermTest >> actualClass [
+PRPillarDefinitionTermTest >> actualClass [
 	^ PRDefinitionList
 ]
 
 { #category : #private }
-PRDefinitionTermTest >> listItemClass [
+PRPillarDefinitionTermTest >> listItemClass [
 	^ PRTermItem
 ]
 
 { #category : #tests }
-PRDefinitionTermTest >> testParseMixed [
+PRPillarDefinitionTermTest >> testParseMixed [
 	| wiki tree nLine |
 	nLine := Smalltalk os lineEnding.
 	wiki := ';1' , nLine , ';2' , nLine , ':3' , nLine , ':4'.
@@ -50,11 +50,11 @@ PRDefinitionTermTest >> testParseMixed [
 ]
 
 { #category : #private }
-PRDefinitionTermTest >> textString: anObject level: anInteger [
+PRPillarDefinitionTermTest >> textString: anObject level: anInteger [
 	^ (super textString: anObject level: anInteger) , '- '
 ]
 
 { #category : #private }
-PRDefinitionTermTest >> wikiString [
+PRPillarDefinitionTermTest >> wikiString [
 	^ ';'
 ]
