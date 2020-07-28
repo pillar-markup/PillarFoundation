@@ -54,9 +54,3 @@ PRUndefinedAnnotation >> tag [
 PRUndefinedAnnotation >> tag: anObject [
 	tag := anObject
 ]
-
-{ #category : #initialization }
-PRUndefinedAnnotation >> withParameters: aPRParameters [ 
-	self add: aPRParameters.
-	self parameters: aPRParameters asDictionary
-]

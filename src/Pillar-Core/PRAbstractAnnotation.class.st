@@ -289,3 +289,9 @@ PRAbstractAnnotation >> postCopy [
 PRAbstractAnnotation >> tag [
 	^ self class tag
 ]
+
+{ #category : #initialization }
+PRAbstractAnnotation >> withParameters: aPRParameters [ 
+	self add: aPRParameters.
+	self parameters: aPRParameters asDictionary
+]
