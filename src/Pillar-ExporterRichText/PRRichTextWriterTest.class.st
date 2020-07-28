@@ -9,7 +9,7 @@ Class {
 
 { #category : #helpers }
 PRRichTextWriterTest >> assertWriting: aPRDocument include: expectedAttribute [
-	self assert: ((self runsOf: aPRDocument) includes: expectedAttribute asArray)
+	self assert: ((self runsOf: aPRDocument) includes: (Array with: expectedAttribute))
 ]
 
 { #category : #'tests - Format' }
