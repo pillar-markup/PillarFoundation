@@ -89,5 +89,5 @@ BaselineOfPillarFoundation >> pillarCore: spec [
 	spec 
 		baseline: 'PillarCore' with: [ 
 			spec
-				repository: 'github://pillar-markup/pillar' ]
+				repository: 'github://pillar-markup/PillarFoundation/src' ]
 ]
