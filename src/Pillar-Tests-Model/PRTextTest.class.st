@@ -1,6 +1,6 @@
 Class {
 	#name : #PRTextTest,
-	#superclass : #PRPillarDocumentItemTest,
+	#superclass : #PRDocumentItemTest,
 	#category : #'Pillar-Tests-Model'
 }
 
