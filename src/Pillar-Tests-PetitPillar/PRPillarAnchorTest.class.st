@@ -14,17 +14,6 @@ PRPillarAnchorTest >> actualClass [
 	^ PRAnchor
 ]
 
-{ #category : #'tests-comparing' }
-PRPillarAnchorTest >> testEqualName [
-	self deny: (self actualClass named: 'foo') equals: (self actualClass named: 'bar')
-]
-
-{ #category : #'tests-accessing' }
-PRPillarAnchorTest >> testName [
-	self instance name: 'zork'.
-	self assert: self instance name equals: 'zork'
-]
-
 { #category : #'tests-parsing' }
 PRPillarAnchorTest >> testParseBasic [
 	| wiki text tree |
@@ -72,10 +61,4 @@ PRPillarAnchorTest >> testParseSpaces [
 	self assertWiki: wiki equalsTree: tree.
 	self assertTree: tree equalsWiki: wiki.
 	self assertTree: tree equalsText: text
-]
-
-{ #category : #'tests-instantiation' }
-PRPillarAnchorTest >> testWith [
-	instance := self actualClass named: 'test'.
-	self assert: self instance name equals: 'test'
 ]

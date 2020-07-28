@@ -38,27 +38,6 @@ PRDocumentItemTest >> addText: aString to: aDocumentItem [
 		yourself
 ]
 
-{ #category : #utilities }
-PRDocumentItemTest >> assertTree: aDocument equalsText: aString [
-	self assert: (PRTextWriter write: aDocument) = aString description: aString resumable: true
-]
-
-{ #category : #utilities }
-PRDocumentItemTest >> assertTree: aDocument equalsWiki: aString [
-	"Assert that traversing aDocument using the wiki writer results in aString."
-
-	self assert: (PRPillarWriter write: aDocument) = aString description: aString resumable: false
-]
-
-{ #category : #utilities }
-PRDocumentItemTest >> assertWiki: aString equalsTree: aDocument [
-	"Assert that parsing aString results in aDocument."
-
-	self
-		assert: (self parser parse: aString) = aDocument
-		description: aString resumable: true
-]
-
 { #category : #private }
 PRDocumentItemTest >> barInstance [
 	^ PRText content: 'bar'
