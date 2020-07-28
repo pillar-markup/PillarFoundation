@@ -137,11 +137,6 @@ PRAbstractAnnotation class >> validateParameters: aPRParameters dictionary: para
 	self hasParameters not and: [ usedKeys ifNotEmpty: [ PRValidation strategy unexpectedParameterIn: anAnnotation ] ]
 ]
 
-{ #category : #'instance creation' }
-PRAbstractAnnotation class >> withParameters: aPRParameters [
-	^ self new withParameters: aPRParameters
-]
-
 { #category : #comparing }
 PRAbstractAnnotation >> = anObject [
 	^ super = anObject and: [ 
@@ -293,10 +288,4 @@ PRAbstractAnnotation >> postCopy [
 { #category : #rendering }
 PRAbstractAnnotation >> tag [
 	^ self class tag
-]
-
-{ #category : #initialization }
-PRAbstractAnnotation >> withParameters: aPRParameters [ 
-	self add: aPRParameters.
-	self parameters: aPRParameters asDictionary
 ]
