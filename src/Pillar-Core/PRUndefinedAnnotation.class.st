@@ -17,11 +17,6 @@ PRUndefinedAnnotation class >> tag [
 	^ 'undefined'
 ]
 
-{ #category : #'instance creation' }
-PRUndefinedAnnotation class >> withParameters: aPRParameters [
-	^ self new withParameters: aPRParameters
-]
-
 { #category : #comparing }
 PRUndefinedAnnotation >> = anObject [
 	^ super = anObject and: [
@@ -53,10 +48,4 @@ PRUndefinedAnnotation >> tag [
 { #category : #accessing }
 PRUndefinedAnnotation >> tag: anObject [
 	tag := anObject
-]
-
-{ #category : #initialization }
-PRUndefinedAnnotation >> withParameters: aPRParameters [ 
-	self add: aPRParameters.
-	self parameters: aPRParameters asDictionary
 ]
