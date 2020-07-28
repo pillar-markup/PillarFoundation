@@ -1,7 +1,7 @@
 Class {
 	#name : #PRParserUtility,
 	#superclass : #Object,
-	#category : 'Pillar-PetitPillar'
+	#category : #'Pillar-Core'
 }
 
 { #category : #'pharo environment' }
