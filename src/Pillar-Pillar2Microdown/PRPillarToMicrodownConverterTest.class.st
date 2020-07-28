@@ -5,7 +5,7 @@ Class {
 		'pillarParser',
 		'writer'
 	],
-	#category : #'Pillar-ExporterMicrodown'
+	#category : #'Pillar-Pillar2Microdown'
 }
 
 { #category : #running }
