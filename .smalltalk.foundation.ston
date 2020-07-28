@@ -3,6 +3,7 @@ SmalltalkCISpec {
     SCIMetacelloLoadSpec {
       #baseline : 'PillarFoundation',
       #directory : 'src',
+      #load : [ 'microdown' ],
       #platforms : [ #pharo ]
     }
   ]
