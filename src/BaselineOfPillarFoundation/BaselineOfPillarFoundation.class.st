@@ -29,7 +29,7 @@ BaselineOfPillarFoundation >> baseline: spec [
 				package: 'Pillar-Microdown' with: [ 
 					spec requires: #('PillarCore' 'Microdown') ];
 				package: 'Pillar-ExporterMicrodown' with: [ 
-					spec requires: #('PillarCore' 'Microdown') ];
+					spec requires: #('PillarCore' 'Microdown' 'Pillar-ExporterCore') ];
 				"# rich text"
 				package: 'Pillar-ExporterRichText' with: [ 
 					spec requires: #('PillarCore' "pillar pear?") ].
