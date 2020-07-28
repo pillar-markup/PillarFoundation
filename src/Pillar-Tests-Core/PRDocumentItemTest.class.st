@@ -74,11 +74,6 @@ PRDocumentItemTest >> foobarInstances [
 	^ Array with: self fooInstance with: self barInstance
 ]
 
-{ #category : #helper }
-PRDocumentItemTest >> parser [
-	^ PRDocument parser
-]
-
 { #category : #'tests-copying' }
 PRDocumentItemTest >> testCopy [
 	self assert: self instance equals: self instance copy.
