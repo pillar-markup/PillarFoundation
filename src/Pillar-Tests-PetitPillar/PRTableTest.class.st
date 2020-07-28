@@ -1,7 +1,7 @@
 Class {
 	#name : #PRTableTest,
-	#superclass : #PRDocumentGroupTest,
-	#category : #'Pillar-Tests-Model-Document'
+	#superclass : #PRPillarDocumentGroupTest,
+	#category : #'Pillar-Tests-PetitPillar'
 }
 
 { #category : #testing }

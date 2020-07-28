@@ -1,7 +1,7 @@
 Class {
 	#name : #PRRawTest,
-	#superclass : #PRTextTest,
-	#category : #'Pillar-Tests-Model-Document'
+	#superclass : #PRPillarTextTest,
+	#category : #'Pillar-Tests-PetitPillar'
 }
 
 { #category : #private }
