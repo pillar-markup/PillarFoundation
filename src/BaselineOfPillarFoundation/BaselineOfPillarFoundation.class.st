@@ -73,7 +73,7 @@ BaselineOfPillarFoundation >> microdown: spec [
 	spec 
 		baseline: 'Microdown' with: [ 
 			spec
-				repository: 'github://noha/MicroDown:fix-baseline-dependencies/src';
+				repository: 'github://pillar-markup/MicroDown/src';
 				loads: #( 'pillar') ]
 ]
 
