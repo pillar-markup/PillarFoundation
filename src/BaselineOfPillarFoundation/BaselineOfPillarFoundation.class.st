@@ -32,9 +32,10 @@ BaselineOfPillarFoundation >> baseline: spec [
 					spec requires: #('PillarCore' 'Microdown' 'Pillar-ExporterRichText') ];
 				"# rich text"
 				package: 'Pillar-ExporterRichText' with: [ 
-					spec requires: #('PillarCore' 'Pillar-ExporterCore' "pillar pear?") ].
+					spec requires: #('PillarCore' 'Pillar-ExporterCore' "pillar pear?") ];
+				package: 'Pillar-Pillar2Microdown'.
 		spec 
-			group: 'default' with: #('pillar' 'microdown');
+			group: 'default' with: #('pillar' 'microdown' 'Pillar-Pillar2Microdown');
 			"# pillar "
 			group: 'pillar' with: #('pillar-parser' 'pillar-parser-tests' 'pillar-exporter' 'pillar-exporter-tests');
 			group: 'pillar-parser' with: #('Pillar-PetitPillar');
